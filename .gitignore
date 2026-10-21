@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.worktrees/
+results/switching/*.partial/
+results/switching/full.json
+results/switching/development-v1.json
+results/switching/development-v2.json

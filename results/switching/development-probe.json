@@ -1,0 +1,62 @@
+{
+  "label": "exploratory development only; transcribed stdout",
+  "seed": 101,
+  "old": [
+    -1,
+    -1,
+    0,
+    0,
+    1,
+    1
+  ],
+  "requested": [
+    0,
+    1,
+    -1,
+    1,
+    -1,
+    0
+  ],
+  "sites": 64,
+  "dx": 0.5,
+  "dt": 0.02,
+  "temperature": 0.005,
+  "gate_sites": 6,
+  "gate_mu": -4,
+  "open_time": 200,
+  "restore_biased_time": 40,
+  "unbiased_time": 80,
+  "final": [
+    0,
+    1,
+    -1,
+    1,
+    -1,
+    0
+  ],
+  "final_valid": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "open_winding": [
+    0,
+    1,
+    -1,
+    1,
+    -1,
+    0
+  ],
+  "open_valid": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "scope": "feasibility only; not included in confirmatory outcomes"
+}

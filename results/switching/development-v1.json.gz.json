@@ -1,0 +1,6 @@
+{
+  "original": "development-v1.json",
+  "original_sha256": "97e0bab2ea45590cb50b2b2dec1cc48ac882174db17f49d5e8d99acf0870ec11",
+  "gzip_sha256": "b99c19ebc94e72a1ff991e6b71103aa117bfd89abb2e6c0183566bc96ca1585e",
+  "compression": "gzip; decompresses to the original unchanged receipt"
+}
