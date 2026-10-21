@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "cells": 3,
+  "events": 4,
+  "cue_samples": 6,
+  "delay_samples": 3,
+  "cue_noise": 0.3,
+  "delay_noise": 0.3,
+  "trace_decay": 0.8,
+  "queries": 5,
+  "development_seeds": [
+    1201
+  ],
+  "full_seeds": [
+    1301,
+    1303,
+    1307,
+    1319,
+    1321
+  ],
+  "refinement_seed": 1193,
+  "workers": 5,
+  "field_tolerance": 0.02,
+  "current_tolerance": 0.005,
+  "audit_rtol": 1e-08,
+  "audit_atol": 1e-10,
+  "operational": {
+    "routing": 0.95,
+    "writes": 0.95,
+    "bystander_survival": 0.99,
+    "whole_array": 0.95,
+    "voted_read": 0.95
+  },
+  "analog_benefit": {
+    "whole_array_gain": 0.05,
+    "positive_seed_fraction": 0.8
+  }
+}

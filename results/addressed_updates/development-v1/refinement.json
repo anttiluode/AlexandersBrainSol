@@ -1,0 +1,1520 @@
+{
+  "max_field_error": 0.0010580938771801917,
+  "max_current_error": 0.002266846909173559,
+  "logical_equal": true,
+  "pass": true,
+  "checks": [
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 0,
+      "field_error": 0.0006685296277878429,
+      "current_error": 0.0005168209279702296
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 1,
+      "field_error": 0.000873484366591464,
+      "current_error": 0.0012977448851177326
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 2,
+      "field_error": 0.0008863766453396072,
+      "current_error": 0.0008792121284685872
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 3,
+      "field_error": 0.0008586733576229648,
+      "current_error": 0.0012052129806883194
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 4,
+      "field_error": 0.0007580727682588955,
+      "current_error": 0.0009420971835760669
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 5,
+      "field_error": 0.0008514290533000874,
+      "current_error": 0.000543293575918577
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 6,
+      "field_error": 0.0007930057936115446,
+      "current_error": 0.000850460841079731
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 7,
+      "field_error": 0.0008024620662610819,
+      "current_error": 0.0015113226187721818
+    },
+    {
+      "arm": "trace",
+      "event": 0,
+      "phase": 8,
+      "field_error": 0.0007195417823768263,
+      "current_error": 0.0007772999480134268
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 0,
+      "field_error": 0.0007371337950419106,
+      "current_error": 0.0008575686846009622
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 1,
+      "field_error": 0.0007158479035122466,
+      "current_error": 0.0003670104151551057
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 2,
+      "field_error": 0.0006671482529662056,
+      "current_error": 0.0018989272585448885
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 3,
+      "field_error": 0.0009144475674093149,
+      "current_error": 0.0011256385594415191
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 4,
+      "field_error": 0.000771743029623656,
+      "current_error": 0.00045362325048250995
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 5,
+      "field_error": 0.0007726976667991438,
+      "current_error": 0.001635720310826927
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 6,
+      "field_error": 0.0006424341720056627,
+      "current_error": 0.0013867763067318961
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 7,
+      "field_error": 0.0006778733971603181,
+      "current_error": 0.0014766115388181733
+    },
+    {
+      "arm": "trace",
+      "event": 1,
+      "phase": 8,
+      "field_error": 0.0006675033825424434,
+      "current_error": 0.0005225066095510197
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 0,
+      "field_error": 0.0006853601507945719,
+      "current_error": 0.0008558128488108663
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 1,
+      "field_error": 0.000751517077208511,
+      "current_error": 0.0008151087536064916
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 2,
+      "field_error": 0.0006565868537235671,
+      "current_error": 0.0002180674244670333
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 3,
+      "field_error": 0.0007688818341134296,
+      "current_error": 0.0010323371791824305
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 4,
+      "field_error": 0.0008133630010836828,
+      "current_error": 0.0008658577995932365
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 5,
+      "field_error": 0.0006833667400678244,
+      "current_error": 0.0010871085666994545
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 6,
+      "field_error": 0.0008504258504653523,
+      "current_error": 0.000932205585274154
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 7,
+      "field_error": 0.0006942418002048503,
+      "current_error": 0.0010210115776948525
+    },
+    {
+      "arm": "trace",
+      "event": 2,
+      "phase": 8,
+      "field_error": 0.0007737139237918396,
+      "current_error": 0.0014102950897313948
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 0,
+      "field_error": 0.0008733037493688332,
+      "current_error": 0.001097764121015421
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 1,
+      "field_error": 0.0008939660479754782,
+      "current_error": 0.0017567387588320882
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 2,
+      "field_error": 0.0006879521858679501,
+      "current_error": 0.0007945642036536471
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 3,
+      "field_error": 0.000787356667321462,
+      "current_error": 0.0007719559820640876
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 4,
+      "field_error": 0.0008172437782603191,
+      "current_error": 0.0011893300444950211
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 5,
+      "field_error": 0.0008496260237019296,
+      "current_error": 0.0008976642715784744
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 6,
+      "field_error": 0.0007807405341334877,
+      "current_error": 0.0010339254217890809
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 7,
+      "field_error": 0.0007126993197242098,
+      "current_error": 0.00042702679870443294
+    },
+    {
+      "arm": "trace",
+      "event": 3,
+      "phase": 8,
+      "field_error": 0.000811491785660262,
+      "current_error": 0.0007529016148152875
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 0,
+      "field_error": 0.0007372243068080679,
+      "current_error": 0.0007447754722795033
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 1,
+      "field_error": 0.0008839836976445379,
+      "current_error": 0.00045966463521573964
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 2,
+      "field_error": 0.0006778359598376179,
+      "current_error": 0.0012108328012688796
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 3,
+      "field_error": 0.0007021544803553222,
+      "current_error": 0.0008354025391061892
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 4,
+      "field_error": 0.0008674574446913682,
+      "current_error": 0.0006486655880031111
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 5,
+      "field_error": 0.0008590980344539528,
+      "current_error": 0.00046875485998767313
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 6,
+      "field_error": 0.0006914111322716068,
+      "current_error": 0.0007309602501008317
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 7,
+      "field_error": 0.0008457802366091239,
+      "current_error": 0.0016944423839334588
+    },
+    {
+      "arm": "snap",
+      "event": 0,
+      "phase": 8,
+      "field_error": 0.0006760064307137156,
+      "current_error": 0.0007295716619843129
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 0,
+      "field_error": 0.0008942234286017155,
+      "current_error": 0.0004891526198993329
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 1,
+      "field_error": 0.0007155817428883927,
+      "current_error": 0.0011225412787223693
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 2,
+      "field_error": 0.0007085612777350608,
+      "current_error": 0.0005053444232147181
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 3,
+      "field_error": 0.0008038651896214922,
+      "current_error": 0.0006706310227688472
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 4,
+      "field_error": 0.0007191157763955032,
+      "current_error": 0.001851485017191401
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 5,
+      "field_error": 0.0007192356144099716,
+      "current_error": 0.00015966180784598993
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 6,
+      "field_error": 0.0010112544400829684,
+      "current_error": 0.00024007774681789051
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 7,
+      "field_error": 0.0007155948306353566,
+      "current_error": 0.001309437764554694
+    },
+    {
+      "arm": "snap",
+      "event": 1,
+      "phase": 8,
+      "field_error": 0.000803568394587786,
+      "current_error": 0.0012423653433015491
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 0,
+      "field_error": 0.0009227271624770375,
+      "current_error": 0.0007694506684058355
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 1,
+      "field_error": 0.0007748294666218925,
+      "current_error": 0.0006848056575187861
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 2,
+      "field_error": 0.0007266058567323902,
+      "current_error": 0.000786169901611844
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 3,
+      "field_error": 0.0007364140553403614,
+      "current_error": 0.000629461718504476
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 4,
+      "field_error": 0.0009306376439502812,
+      "current_error": 0.0009438361274900853
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 5,
+      "field_error": 0.000687575821937463,
+      "current_error": 0.0009521954601003635
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 6,
+      "field_error": 0.0008907658675813941,
+      "current_error": 0.0008628768346331805
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 7,
+      "field_error": 0.0008455564297995391,
+      "current_error": 0.0006422543752129251
+    },
+    {
+      "arm": "snap",
+      "event": 2,
+      "phase": 8,
+      "field_error": 0.0006306549228014194,
+      "current_error": 0.000820686535399337
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 0,
+      "field_error": 0.0008236869281643715,
+      "current_error": 0.001099749908086034
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 1,
+      "field_error": 0.0007234818307141796,
+      "current_error": 0.0013098761050854002
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 2,
+      "field_error": 0.0006919557586069164,
+      "current_error": 0.0006852103715532798
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 3,
+      "field_error": 0.000877804663355925,
+      "current_error": 0.0005580305889579529
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 4,
+      "field_error": 0.0008226964056574342,
+      "current_error": 0.0010669818264710251
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 5,
+      "field_error": 0.0008197066173322525,
+      "current_error": 0.0008299031600356999
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 6,
+      "field_error": 0.0006940031641405861,
+      "current_error": 0.0011814189662949781
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 7,
+      "field_error": 0.0007314042570830539,
+      "current_error": 0.0005211872340434853
+    },
+    {
+      "arm": "snap",
+      "event": 3,
+      "phase": 8,
+      "field_error": 0.0007307570906814453,
+      "current_error": 0.0011443528266364134
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 0,
+      "field_error": 0.0007385692613976719,
+      "current_error": 0.0009555041193770597
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 1,
+      "field_error": 0.0007434505390913633,
+      "current_error": 0.0008645912165850811
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 2,
+      "field_error": 0.0007936825137187057,
+      "current_error": 0.0010154824106804183
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 3,
+      "field_error": 0.0008507554803407445,
+      "current_error": 0.0008613331557884574
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 4,
+      "field_error": 0.0007853713802618581,
+      "current_error": 0.0001395142892735568
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 5,
+      "field_error": 0.0008101767641039093,
+      "current_error": 0.001121026401294467
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 6,
+      "field_error": 0.0008160613928384883,
+      "current_error": 0.0019283971858310425
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 7,
+      "field_error": 0.0007213731058828882,
+      "current_error": 0.0012462701653724872
+    },
+    {
+      "arm": "oracle",
+      "event": 0,
+      "phase": 8,
+      "field_error": 0.0007724107544051971,
+      "current_error": 0.0016834329145914984
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 0,
+      "field_error": 0.0008050777926795324,
+      "current_error": 0.0009536934351175863
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 1,
+      "field_error": 0.0007772036277585228,
+      "current_error": 0.0011535062497650544
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 2,
+      "field_error": 0.000816026141535125,
+      "current_error": 0.0018245769138624385
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 3,
+      "field_error": 0.0007651573387884687,
+      "current_error": 0.0008425338593618251
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 4,
+      "field_error": 0.0006799073269454052,
+      "current_error": 0.00045988787511927476
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 5,
+      "field_error": 0.0008866511846858479,
+      "current_error": 0.0004019460533043473
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 6,
+      "field_error": 0.0007514588383028483,
+      "current_error": 0.0010717624608180508
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 7,
+      "field_error": 0.0008790168411118378,
+      "current_error": 0.0016173738312509067
+    },
+    {
+      "arm": "oracle",
+      "event": 1,
+      "phase": 8,
+      "field_error": 0.0007730647360866508,
+      "current_error": 0.001515870063698757
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 0,
+      "field_error": 0.0007878574951736414,
+      "current_error": 0.0013625491926635425
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 1,
+      "field_error": 0.0006883137562708604,
+      "current_error": 0.00053012827706575
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 2,
+      "field_error": 0.0007245257132509704,
+      "current_error": 0.0006695004888003647
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 3,
+      "field_error": 0.0008075467153870333,
+      "current_error": 0.0013583719062218447
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 4,
+      "field_error": 0.0010468993945717989,
+      "current_error": 0.002266846909173559
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 5,
+      "field_error": 0.0007985431902075119,
+      "current_error": 0.0008112921148188401
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 6,
+      "field_error": 0.000836294874673601,
+      "current_error": 0.0008794362537668313
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 7,
+      "field_error": 0.0007907121193152149,
+      "current_error": 0.0005817091913486463
+    },
+    {
+      "arm": "oracle",
+      "event": 2,
+      "phase": 8,
+      "field_error": 0.0009653167081134211,
+      "current_error": 0.0019158659631460795
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 0,
+      "field_error": 0.0007446010786825303,
+      "current_error": 0.001492471636415138
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 1,
+      "field_error": 0.0007729031387758858,
+      "current_error": 0.0011794063144318634
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 2,
+      "field_error": 0.0007565227462011146,
+      "current_error": 0.0017587677015016845
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 3,
+      "field_error": 0.0007599776978430934,
+      "current_error": 0.0009176983428461627
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 4,
+      "field_error": 0.0007316727367384332,
+      "current_error": 0.0011365449383278214
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 5,
+      "field_error": 0.000840257139412034,
+      "current_error": 0.0007994992776861054
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 6,
+      "field_error": 0.000735324400135856,
+      "current_error": 0.0003469831832784709
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 7,
+      "field_error": 0.0008961582286048204,
+      "current_error": 0.0006654325100532987
+    },
+    {
+      "arm": "oracle",
+      "event": 3,
+      "phase": 8,
+      "field_error": 0.0009678785160004459,
+      "current_error": 0.0012486625239009341
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 0,
+      "field_error": 0.0010329444122841784,
+      "current_error": 0.0010199424757050546
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 1,
+      "field_error": 0.0008063579604336938,
+      "current_error": 0.0005641217025336848
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 2,
+      "field_error": 0.0008049674516466845,
+      "current_error": 0.0017916375572721785
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 3,
+      "field_error": 0.0007579290191387017,
+      "current_error": 0.0012044245014224686
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 4,
+      "field_error": 0.0007183992872131759,
+      "current_error": 0.000529757276603593
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 5,
+      "field_error": 0.0007112492429320636,
+      "current_error": 0.0007996590631839107
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 6,
+      "field_error": 0.0008316565162105889,
+      "current_error": 0.0008228636893006513
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 7,
+      "field_error": 0.0007753407316113284,
+      "current_error": 0.0005522762633810852
+    },
+    {
+      "arm": "shuffled",
+      "event": 0,
+      "phase": 8,
+      "field_error": 0.0008903956042714655,
+      "current_error": 0.0011794193057982905
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 0,
+      "field_error": 0.0007859589921752909,
+      "current_error": 0.0013472798331907315
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 1,
+      "field_error": 0.0007224137051454261,
+      "current_error": 0.0006909673346465993
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 2,
+      "field_error": 0.0006771322894238038,
+      "current_error": 0.0010042912072380922
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 3,
+      "field_error": 0.0009429704251645787,
+      "current_error": 0.0016082273665103397
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 4,
+      "field_error": 0.0007709308918054269,
+      "current_error": 0.0011083992467216183
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 5,
+      "field_error": 0.0008408464950575816,
+      "current_error": 0.0006330014750785262
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 6,
+      "field_error": 0.0007610106415106836,
+      "current_error": 0.0008527280331535603
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 7,
+      "field_error": 0.0008115379136015092,
+      "current_error": 0.0005044524986343446
+    },
+    {
+      "arm": "shuffled",
+      "event": 1,
+      "phase": 8,
+      "field_error": 0.0007864457857668458,
+      "current_error": 0.001288107532401911
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 0,
+      "field_error": 0.0008290622181991942,
+      "current_error": 0.000752679510378728
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 1,
+      "field_error": 0.0007807806082915575,
+      "current_error": 0.0008586503929289002
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 2,
+      "field_error": 0.0007582336545968077,
+      "current_error": 0.0007269614320454549
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 3,
+      "field_error": 0.000906650122062121,
+      "current_error": 0.0003415343983290131
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 4,
+      "field_error": 0.0008963386299865885,
+      "current_error": 0.0012267343372639045
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 5,
+      "field_error": 0.0007514246754074427,
+      "current_error": 0.0015758741527643338
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 6,
+      "field_error": 0.0007750997221744111,
+      "current_error": 0.0005402711893144341
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 7,
+      "field_error": 0.0008377923740258809,
+      "current_error": 0.0005477823586700348
+    },
+    {
+      "arm": "shuffled",
+      "event": 2,
+      "phase": 8,
+      "field_error": 0.0008768061773147292,
+      "current_error": 0.0006055962853277327
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 0,
+      "field_error": 0.000982780842347073,
+      "current_error": 0.0011768321780146057
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 1,
+      "field_error": 0.0008865848192314313,
+      "current_error": 0.0005835921474989791
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 2,
+      "field_error": 0.0009166216269640651,
+      "current_error": 0.0010326646748598373
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 3,
+      "field_error": 0.0009120048765990474,
+      "current_error": 0.000562973393552213
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 4,
+      "field_error": 0.0008894769897015031,
+      "current_error": 0.0017819542312088044
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 5,
+      "field_error": 0.0008129667466050742,
+      "current_error": 0.0004058447829402567
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 6,
+      "field_error": 0.0009527462375324648,
+      "current_error": 0.0006711339144124945
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 7,
+      "field_error": 0.0008207164450865137,
+      "current_error": 0.00071748828499138
+    },
+    {
+      "arm": "shuffled",
+      "event": 3,
+      "phase": 8,
+      "field_error": 0.0008532143370631518,
+      "current_error": 0.0012269279900005564
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 0,
+      "field_error": 0.0007979788941161169,
+      "current_error": 0.0005745630208174486
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 1,
+      "field_error": 0.0006992332692075254,
+      "current_error": 0.0013388330703937926
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 2,
+      "field_error": 0.0006827327611314596,
+      "current_error": 0.0005970096049131285
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 3,
+      "field_error": 0.0010580938771801917,
+      "current_error": 0.0009055808827979524
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 4,
+      "field_error": 0.0008651731470253964,
+      "current_error": 0.0010694899433835586
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 5,
+      "field_error": 0.0008484531456789331,
+      "current_error": 0.000554595529152677
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 6,
+      "field_error": 0.0007513083990558304,
+      "current_error": 0.0009192219591244825
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 7,
+      "field_error": 0.0007038325506163604,
+      "current_error": 0.0007498977774706705
+    },
+    {
+      "arm": "all_open",
+      "event": 0,
+      "phase": 8,
+      "field_error": 0.0006749832196608255,
+      "current_error": 0.0005836219756091277
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 0,
+      "field_error": 0.0008033778168310157,
+      "current_error": 0.0005396559361363629
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 1,
+      "field_error": 0.0007335808926722538,
+      "current_error": 0.0008539363925039178
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 2,
+      "field_error": 0.000762157093372033,
+      "current_error": 0.0007997756912570542
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 3,
+      "field_error": 0.0008522562523849448,
+      "current_error": 0.0007830285818459515
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 4,
+      "field_error": 0.0007814874507785687,
+      "current_error": 0.0004914280706497937
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 5,
+      "field_error": 0.0009817344857108912,
+      "current_error": 0.001132768989507038
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 6,
+      "field_error": 0.0007055017476698742,
+      "current_error": 0.001236013446037909
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 7,
+      "field_error": 0.0006584469185385652,
+      "current_error": 0.0009615728382255662
+    },
+    {
+      "arm": "all_open",
+      "event": 1,
+      "phase": 8,
+      "field_error": 0.0007552901916218908,
+      "current_error": 0.00020076470217855746
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 0,
+      "field_error": 0.0009211132092738475,
+      "current_error": 0.0011766666867305542
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 1,
+      "field_error": 0.0007059353407375635,
+      "current_error": 0.0013050184411824428
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 2,
+      "field_error": 0.0007532954354255265,
+      "current_error": 0.00040686558289490526
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 3,
+      "field_error": 0.0008754025034704011,
+      "current_error": 0.0014499770948225021
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 4,
+      "field_error": 0.0006848966603764171,
+      "current_error": 0.0009779819055931727
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 5,
+      "field_error": 0.0008774928919184329,
+      "current_error": 0.0006489388712904443
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 6,
+      "field_error": 0.0009578871763734857,
+      "current_error": 0.0005535256486517981
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 7,
+      "field_error": 0.0007960300109890508,
+      "current_error": 0.0009845225085650666
+    },
+    {
+      "arm": "all_open",
+      "event": 2,
+      "phase": 8,
+      "field_error": 0.0007049755710826786,
+      "current_error": 0.00044138098063486314
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 0,
+      "field_error": 0.0007214585394402205,
+      "current_error": 0.0008641639109576854
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 1,
+      "field_error": 0.0007369675290404543,
+      "current_error": 0.0008501122166534314
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 2,
+      "field_error": 0.0008017308694899407,
+      "current_error": 0.00045741243624386474
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 3,
+      "field_error": 0.0010489798506115849,
+      "current_error": 0.0011213839557211447
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 4,
+      "field_error": 0.0006653639592971264,
+      "current_error": 0.0006593686574329627
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 5,
+      "field_error": 0.0006969287551465576,
+      "current_error": 0.0007320150588028818
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 6,
+      "field_error": 0.000755409923898036,
+      "current_error": 0.0010292524018127025
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 7,
+      "field_error": 0.000639525654219002,
+      "current_error": 0.0002815129712031572
+    },
+    {
+      "arm": "all_open",
+      "event": 3,
+      "phase": 8,
+      "field_error": 0.0007518739308183629,
+      "current_error": 0.000530840947797484
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 0,
+      "field_error": 0.0006572910617868847,
+      "current_error": 0.001015950332052401
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 1,
+      "field_error": 0.0008719302356438315,
+      "current_error": 0.0009219828812696007
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 2,
+      "field_error": 0.000810353031827493,
+      "current_error": 0.0007101686703570309
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 3,
+      "field_error": 0.0007780666293602434,
+      "current_error": 0.0009295898011508832
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 4,
+      "field_error": 0.000702460020407159,
+      "current_error": 0.001039918077607116
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 5,
+      "field_error": 0.0008510254353640005,
+      "current_error": 0.0013821408562312287
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 6,
+      "field_error": 0.0009644776528414875,
+      "current_error": 0.0006772196935126429
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 7,
+      "field_error": 0.0008188032619163007,
+      "current_error": 0.0011453830456133185
+    },
+    {
+      "arm": "closed",
+      "event": 0,
+      "phase": 8,
+      "field_error": 0.0006790447705939465,
+      "current_error": 0.00047020762232569124
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 0,
+      "field_error": 0.0008235018105529154,
+      "current_error": 0.0011031682927683459
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 1,
+      "field_error": 0.0010568932959652746,
+      "current_error": 0.0009292997890827381
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 2,
+      "field_error": 0.0007569207917112482,
+      "current_error": 0.0021198228516588202
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 3,
+      "field_error": 0.0008724956911048601,
+      "current_error": 0.0013688090817784992
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 4,
+      "field_error": 0.000899879251814054,
+      "current_error": 0.00106508323030452
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 5,
+      "field_error": 0.0007839337610136192,
+      "current_error": 0.001257884817552013
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 6,
+      "field_error": 0.0007390361936290132,
+      "current_error": 0.0005042370016439673
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 7,
+      "field_error": 0.000661281499940333,
+      "current_error": 0.0012727640995501277
+    },
+    {
+      "arm": "closed",
+      "event": 1,
+      "phase": 8,
+      "field_error": 0.0007544359783951203,
+      "current_error": 0.0017067616793894
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 0,
+      "field_error": 0.000877121294334542,
+      "current_error": 0.0010271322158026397
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 1,
+      "field_error": 0.0007529649621723192,
+      "current_error": 0.0015780635758152473
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 2,
+      "field_error": 0.0009627347211842061,
+      "current_error": 0.0009643162795567317
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 3,
+      "field_error": 0.0007630392309446984,
+      "current_error": 0.0007990149750356501
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 4,
+      "field_error": 0.0008776114031029508,
+      "current_error": 0.0010531793487449786
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 5,
+      "field_error": 0.0007284967101290234,
+      "current_error": 0.0005301235741391186
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 6,
+      "field_error": 0.0008095203550681899,
+      "current_error": 0.00031375920340925845
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 7,
+      "field_error": 0.0007552310904727075,
+      "current_error": 0.0009755932270958251
+    },
+    {
+      "arm": "closed",
+      "event": 2,
+      "phase": 8,
+      "field_error": 0.000848218144204502,
+      "current_error": 0.0012490660761440564
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 0,
+      "field_error": 0.0009824768768769189,
+      "current_error": 0.0009481686988803278
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 1,
+      "field_error": 0.000689834232070454,
+      "current_error": 0.0018119849861982663
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 2,
+      "field_error": 0.0009001999607361734,
+      "current_error": 0.0013567771579824084
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 3,
+      "field_error": 0.000999141429046983,
+      "current_error": 0.0007301066315558019
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 4,
+      "field_error": 0.0008327013888391021,
+      "current_error": 0.0020673154946605835
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 5,
+      "field_error": 0.0007465587587181122,
+      "current_error": 0.0017472174414176755
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 6,
+      "field_error": 0.0008491404008894358,
+      "current_error": 0.00046433052687456025
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 7,
+      "field_error": 0.0007273213104662292,
+      "current_error": 0.0010927494799305992
+    },
+    {
+      "arm": "closed",
+      "event": 3,
+      "phase": 8,
+      "field_error": 0.0008193632250319332,
+      "current_error": 0.00031932999988248945
+    }
+  ]
+}

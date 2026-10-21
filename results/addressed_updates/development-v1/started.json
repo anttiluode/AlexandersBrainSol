@@ -1,0 +1,107 @@
+{
+  "mode": "development",
+  "source_commit": "c6c5c97d9059750ede7e197f0b4beedf7d59bc7e",
+  "hashes": {
+    "addressed_updates.py": "32984b3c5a828d83610f28a009778e199c22a13de65cf00ca01f773f8af23a9b",
+    "addressed_audit.py": "58d310d0e21a5126e4cecd793c6765e0a9338221d9ecc6f06ea6a3ae4bab9afe",
+    "protocols/addressed_updates.json": "a59c70c44c901cbbc11cc8dcaa4b114cbb9be6c7396a3c2a440b226253fb4998",
+    "ring.py": "ea37dc6effd806f707a37ba8e56d67336640f31ff1072a2900fb5e409379e9cf",
+    "experiment.py": "5cbcb79b5836a40da92ffbfe6d0c9ef8aede9694b65f5fa7988a41598275dabe",
+    "protocols/switching.json": "63436da5bdb5dba7c85355ce8ff24efab0cb38127bed5dcb911314b45f921752",
+    "protocols/calibration.json": "c33d8fc756a5b840eba61f3b2c0b3713d3c3f134b307f824b023a229064b7b76"
+  },
+  "address_protocol": {
+    "version": 1,
+    "cells": 3,
+    "events": 4,
+    "cue_samples": 6,
+    "delay_samples": 3,
+    "cue_noise": 0.3,
+    "delay_noise": 0.3,
+    "trace_decay": 0.8,
+    "queries": 5,
+    "development_seeds": [
+      1201
+    ],
+    "full_seeds": [
+      1301,
+      1303,
+      1307,
+      1319,
+      1321
+    ],
+    "refinement_seed": 1193,
+    "workers": 5,
+    "field_tolerance": 0.02,
+    "current_tolerance": 0.005,
+    "audit_rtol": 1e-08,
+    "audit_atol": 1e-10,
+    "operational": {
+      "routing": 0.95,
+      "writes": 0.95,
+      "bystander_survival": 0.99,
+      "whole_array": 0.95,
+      "voted_read": 0.95
+    },
+    "analog_benefit": {
+      "whole_array_gain": 0.05,
+      "positive_seed_fraction": 0.8
+    }
+  },
+  "cell_protocol": {
+    "version": 1,
+    "sites": 64,
+    "dx": 0.5,
+    "dt": 0.0025,
+    "temperature": 0.005,
+    "gate_sites": 6,
+    "gate_mu": -4,
+    "write_time": 200,
+    "close_time": 40,
+    "release_time": 40,
+    "wait_time": 80,
+    "sensor_bond": 32,
+    "read_phase": 0.005,
+    "read_time": 2,
+    "samples_per_read": 5,
+    "read_count": 100,
+    "sensor_noise": 0.01,
+    "replicas": 4,
+    "calibration_seed": 91,
+    "calibration_replicas": 32,
+    "refinement_seed": 83,
+    "refinement_field_tolerance": 0.02,
+    "refinement_current_tolerance": 0.005,
+    "development_seeds": [
+      101,
+      103
+    ],
+    "full_seeds": [
+      901,
+      907,
+      911,
+      919,
+      929,
+      937,
+      941,
+      947,
+      953,
+      967
+    ],
+    "rotor_barrier": 1.0,
+    "rotor_open_barrier": 0.02,
+    "rotor_force": 1.0,
+    "audit_rtol": 1e-08,
+    "audit_atol": 1e-10,
+    "workers": 8
+  },
+  "calibration_means": [
+    -0.18180415186003604,
+    0.00825202490481234,
+    0.18543942507616112
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}
