@@ -10,6 +10,15 @@ def load(path):
     return json.loads(data)
 
 
+def vote_five(labels):
+    labels=np.asarray(labels)
+    if labels.ndim!=2 or labels.shape[1]%5 or not np.all(np.isin(labels,[-1,0,1])):
+        raise ValueError('five-query control requires valid three-state symbols')
+    grouped=labels.reshape(len(labels),-1,5)
+    counts=np.stack([(grouped==n).sum(axis=-1) for n in [-1,0,1]],axis=-1)
+    return np.where(counts.max(axis=-1)>=3,counts.argmax(axis=-1)-1,2)
+
+
 def analyze(receipt):
     means=np.asarray(receipt['calibration_means']);thresholds=(means[1:]+means[:-1])/2
     result={}
@@ -20,12 +29,15 @@ def analyze(receipt):
             valid=np.asarray(d['valid']);final=np.asarray(d['final']);written=valid & (final==target)
             sensor=np.asarray(d['sensor_values']);reads=np.asarray(d['reads'])
             pooled=np.searchsorted(thresholds,sensor.reshape(len(sensor),-1,5).mean(axis=2))-1
+            voted=vote_five(reads)
             changed=np.asarray(d['probe_changed']);no_probe=np.asarray(d['idle_changed'])
             metrics.append(dict(replacement=float(np.mean(written)),old_retention=float(np.mean(valid & (final==old))),
                                 invalid=float(np.mean(~valid)),
                                 read_accuracy=float(np.mean((reads==target[:,None]) & written[:,None])),
                                 state_read_accuracy=float(np.mean((reads==final[:,None]) & valid[:,None])),
                                 pooled_accuracy=float(np.mean((pooled==target[:,None]) & written[:,None])),
+                                vote_accuracy=float(np.mean((voted==target[:,None]) & written[:,None])),
+                                vote_coverage=float(np.mean(voted!=2)),
                                 damage=float(np.mean(changed)),no_probe_damage=float(np.mean(no_probe)),
                                 conditional_damage=float(np.mean(changed[written])) if np.any(written) else None,
                                 workflow_success=float(np.mean(written & ~changed)),
@@ -49,13 +61,13 @@ def analyze(receipt):
 def markdown(r):
     lines=['# Switching-memory result','',f"Source: `{r['source_commit']}`; mode: **{r['mode']}**.",
            f"{r['independent_units']} independent noise-seed batches, {r['histories']} transition histories, {r['queries']} successive local queries.",'',
-           '| Ring arm | Requested replacement | Old state retained | Reads requested label | Five-query average (secondary) | Any monitored read damage |',
-           '| --- | ---: | ---: | ---: | ---: | ---: |']
+           '| Ring arm | Requested replacement | Old state retained | Reads requested label | Five-query analog average | Five-query 2-bit vote | Any monitored read damage |',
+           '| --- | ---: | ---: | ---: | ---: | ---: | ---: |']
     for name,d in r['ring'].items():
-        lines.append('| '+name+' | '+' | '.join(f'{100*d[k]:.2f}%' for k in ['replacement','old_retention','read_accuracy','pooled_accuracy','damage'])+' |')
+        lines.append('| '+name+' | '+' | '.join(f'{100*d[k]:.2f}%' for k in ['replacement','old_retention','read_accuracy','pooled_accuracy','vote_accuracy','damage'])+' |')
     lines += ['',f"**Declared overall gate: {'PASS' if r['verdict']['pass'] else 'FAIL'}.**",
               'Checks: '+', '.join(k+'='+str(v) for k,v in r['verdict']['checks'].items())+'.','',
-              'Read accuracy in this table means the requested label, with failed writes counted as errors. Closed and idle arms deliberately resist that request; their low requested-label scores are expected. The JSON report separately gives accuracy against the actual valid stored integer. Five-query pooling costs ten time units instead of two and reduces the output rate fivefold. It was identified during development and is a secondary diagnostic, not a replacement for the failed single-query criterion. Temporal queries are correlated; they are not independent trials.',
+              'Read accuracy in this table means the requested label, with failed writes counted as errors. Closed and idle arms deliberately resist that request; their low requested-label scores are expected. The JSON report separately gives accuracy against the actual valid stored integer. Five-query pooling costs ten time units instead of two and reduces the output rate fivefold. It was identified during development and is a secondary diagnostic, not a replacement for the failed single-query criterion. The quantized control uses only five already-rounded three-state symbols (2 storage bits each); it requires a strict majority, counts abstentions as errors, and has no access to analog magnitudes. The analog average retains five floating scalar measurements. Both secondary controls use the same five queries and cannot rescue the primary gate. Temporal queries are correlated; they are not independent trials.',
               '', '| Ordinary three-well control | Requested replacement | Read correct | Monitored damage |', '| --- | ---: | ---: | ---: |']
     for name,d in r['ordinary'].items():lines.append(f"| {name} | {100*d['replacement']:.2f}% | {100*d['read_accuracy']:.2f}% | {100*d['damage']:.2f}% |")
     lines += ['', 'The ordinary control shows whether the basic gated-memory behavior is generic. Energy, microscopic noise and state dimensions are not matched; these percentages establish no efficiency or topology-specific advantage.', '',
