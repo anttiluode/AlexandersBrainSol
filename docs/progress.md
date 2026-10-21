@@ -29,3 +29,19 @@
   miniature model comparison to serial and worker-local exclusive checkpoints.
   It changes scheduling only; no new seeds or physical parameters are drawn.
 - Full execution refuses fresh seeds if numerical refinement fails.
+
+- Fresh full cohort complete: all ten batches, all 240 writes/closed retentions
+  correct, no monitored changes, single-query accuracy 92.7167%; primary FAIL.
+  Secondary analog averaging 99.4583%; quantized symbol voting 98.6458%.
+- Packaging correction: aggregate observed truncated after producer hashed it.
+  Original prefix retained; all ten completed checkpoints reassembled into bytes
+  whose SHA256 exactly matches original producer af5d3e10... No model rerun,
+  seed selection or interpretation change. Cause of truncation not established.
+- Reporting clarification: three labels can be encoded in 2 bits; actual code
+  uses integer/JSON storage. No packed-storage efficiency claim is supported.
+
+- Final independent review: no blockers. Calibration, coupled refinement and
+  all ten complete seeded runs replayed; 468,527 float comparisons, maxdiff=0;
+  exact discrete outputs and summary/verdict. Independent artifact recovery and
+  claim arithmetic verified. Author suite 20/20 passes; original lock/declaration
+  CPU CI green. All results preserved; primary benefit gate remains FAIL.

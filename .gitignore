@@ -6,3 +6,5 @@ results/switching/*.partial/
 results/switching/full.json
 results/switching/development-v1.json
 results/switching/development-v2.json
+results/switching/full-truncated.json
+results/switching/full.json.gz

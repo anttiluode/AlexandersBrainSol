@@ -25,3 +25,10 @@ A good vote result would show that retaining analog magnitude after each query
 is unnecessary for this limited repeated-read task. It says nothing about
 whether the continuous dynamics inside the ring can be eliminated, and does not
 show any advantage over ordinary three-state memory.
+
+## Reporting clarification after full results
+
+The finite-symbol control is encodable in two bits per query, but this Python
+implementation stores NumPy/Python integers and JSON values, not packed 2-bit
+words. The original declaration's storage wording was imprecise. The voter
+inputs remain only three-state symbols; no analog values were added or removed.

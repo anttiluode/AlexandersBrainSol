@@ -10,6 +10,39 @@ The motivation is [BrainBoxSol's local-slowness result](https://github.com/antti
 slowing improved retention but resisted updating. Here the proposed solution is
 an explicit write gate, not more permanent stability.
 
+## Fresh result — 21 October 2026
+
+[Report](results/switching/report.md) · [Full receipt](results/switching/full-recovered.json.gz) · [Recovery correction](results/switching/recovery.json)
+
+Ten independent noise-seed batches, 240 transition histories, 24,000 local
+queries under source lock [`a67f147`](https://github.com/anttiluode/AlexandersBrainSol/commit/a67f14722f68c3fd91115232970c9a4051ee7825).
+
+| Test | Result |
+| --- | ---: |
+| Requested gated replacements | 240/240 |
+| Closed-command old-state retention | 240/240 |
+| Histories with monitored probe damage | 0/240 |
+| Single-query accuracy | 92.72% |
+| Five-query analog mean, secondary | 99.46% |
+| Five-query symbol majority, secondary | 98.65% |
+
+**The declared overall gate fails:** individual queries miss the 95% accuracy
+criterion. Gated replacement and finite-time integer preservation work at these
+settings. Repeated already-quantized labels suffice for >95% secondary accuracy;
+retaining analog magnitudes helps slightly, with no necessity claim. Both
+five-query controls cost five times the query duration. The conventional
+three-well control also performs gated replacement and reaches 100% read accuracy;
+there is no demonstrated topology or efficiency advantage.
+
+All **20 tests pass**. An [independent full replay](results/switching/independent-audit.json) compared **468,527 floats with zero difference**, plus exact discrete outputs, under the original source lock.
+
+A truncated aggregate copy was recovered from the original completed seed
+checkpoints. The recovered bytes exactly match the complete-file SHA256 recorded
+by the producer. The original prefix, expected digest, recovery script and a
+labeled correction remain available. No model, seeds, thresholds or outcomes
+were changed. See [method and costs](docs/method_and_costs.md) for physical,
+numerical and storage limits.
+
 ## What the first test measures
 
 A 64-site complex Ginzburg-Landau ring stores one of three windings (-1,0,+1).
@@ -38,8 +71,8 @@ from equal-time background noise.
 A conventional scalar angle in a three-well potential provides the same logical
 alphabet and a barrier-gated command. Physical energy, microscopic noise and
 state dimension are not matched, so it is a mechanism control, not a speed or
-energy benchmark. Three states carry at most log2(3) bits (stored with 2-bit
-codes); neither continuous field size nor analog sensor precision is free.
+energy benchmark. Three states carry at most log2(3) information bits (encodable with 2-bit
+codes; this implementation stores integer/JSON values); neither continuous field size nor analog sensor precision is free.
 
 ## Reproduce
 
@@ -53,10 +86,10 @@ python experiment.py development --output /tmp/development.json
 # Full execution requires clean checkout of the published exact source lock:
 python experiment.py full --lock SOURCE_COMMIT --output /tmp/full.json
 # Replay writes a different audit and preserves every original receipt:
-python audit.py /tmp/full.json --output /tmp/full-audit.json
+python audit.py results/switching/full-recovered.json.gz --output /tmp/full-audit.json
 ```
 
-All completed seed outcomes are checkpointed before the next seed. Full runs
+Each worker checkpoints its completed seed outcome before returning it to the coordinator. Full runs
 verify source blobs at the locked commit and calibration source/protocol hashes.
 The coupled-noise timestep refinement covers every write phase and all 100
 read episodes for all six transitions and all four arms. The overall pass gate

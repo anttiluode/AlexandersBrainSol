@@ -34,3 +34,24 @@ intervals, if shown, use independent seed batches rather than individual reads.
 The author's regression suite verifies these fixes. This review does not assert
 that future fresh outcomes will meet the benefit gate. No reviewer requested
 changes to Claude's repositories, which remain untouched.
+
+## Independent full replay and final assessment
+
+The reviewer used a separate clean worktree at exact source lock
+`a67f14722f68c3fd91115232970c9a4051ee7825` and a separate preserved replay wrapper.
+They regenerated calibration, the complete coupled-Brownian numerical check and
+all ten full seeded runs. Every seed row, field, measurement, prediction,
+validity/damage flag, ordinary-control output, summary and verdict matched.
+468,527 floating-point values were compared at rtol=1e-8 / atol=1e-10; maximum
+absolute difference was 0. Discrete outputs matched exactly. Independent recovery
+validation proved the complete receipt SHA256 equals the producer's digest and
+that the damaged original prefix remains unchanged. Independent arithmetic also
+confirmed the secondary read statistics and primary FAIL.
+
+No remaining review blockers. Final author suite: 20 tests passed. The published
+source lock and secondary-declaration commits both passed GitHub CPU CI before
+results were added. Evidence lives in `results/switching/independent-audit.json`,
+`independent-recovery-validation.json`, `independent-claims-validation.json`, and
+the ten per-seed audit records. Local filesystem paths in those artifacts record
+the original audit environment; use the repository's generic audit.py to replay
+the complete gzip receipt elsewhere.
