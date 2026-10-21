@@ -1,0 +1,235 @@
+{
+  "source_commit": "24f9c9b7bf9218ebc10961c0285381f833f4b60a",
+  "mode": "development",
+  "summary": {
+    "write_accuracy": 1.0,
+    "closed_replacement": 0.0,
+    "closed_retention": 1.0,
+    "idle_retention": 1.0,
+    "read_accuracy": 0.9304166666666667,
+    "probe_damage": 0.0,
+    "idle_damage": 0.0,
+    "refinement_ok": true
+  },
+  "verdict": {
+    "checks": {
+      "replacement": true,
+      "closed_resistance": true,
+      "original_idle_retention": true,
+      "local_read": false,
+      "probe_preservation": true,
+      "idle_preservation": true,
+      "refinement": true
+    },
+    "pass": false
+  },
+  "ring": {
+    "gated": {
+      "replacement": 1.0,
+      "old_retention": 0.0,
+      "invalid": 0.0,
+      "read_accuracy": 0.9304166666666667,
+      "state_read_accuracy": 0.9304166666666667,
+      "pooled_accuracy": 0.9958333333333333,
+      "damage": 0.0,
+      "no_probe_damage": 0.0,
+      "conditional_damage": 0.0,
+      "workflow_success": 1.0,
+      "histories": 24.0,
+      "queries": 2400.0,
+      "per_seed": [
+        {
+          "replacement": 1.0,
+          "old_retention": 0.0,
+          "invalid": 0.0,
+          "read_accuracy": 0.93375,
+          "state_read_accuracy": 0.93375,
+          "pooled_accuracy": 0.9958333333333333,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": 0.0,
+          "workflow_success": 1.0,
+          "histories": 24,
+          "queries": 2400
+        },
+        {
+          "replacement": 1.0,
+          "old_retention": 0.0,
+          "invalid": 0.0,
+          "read_accuracy": 0.9270833333333334,
+          "state_read_accuracy": 0.9270833333333334,
+          "pooled_accuracy": 0.9958333333333333,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": 0.0,
+          "workflow_success": 1.0,
+          "histories": 24,
+          "queries": 2400
+        }
+      ]
+    },
+    "closed": {
+      "replacement": 0.0,
+      "old_retention": 1.0,
+      "invalid": 0.0,
+      "read_accuracy": 0.0,
+      "state_read_accuracy": 0.92875,
+      "pooled_accuracy": 0.0,
+      "damage": 0.0,
+      "no_probe_damage": 0.0,
+      "conditional_damage": null,
+      "workflow_success": 0.0,
+      "histories": 24.0,
+      "queries": 2400.0,
+      "per_seed": [
+        {
+          "replacement": 0.0,
+          "old_retention": 1.0,
+          "invalid": 0.0,
+          "read_accuracy": 0.0,
+          "state_read_accuracy": 0.9320833333333334,
+          "pooled_accuracy": 0.0,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": null,
+          "workflow_success": 0.0,
+          "histories": 24,
+          "queries": 2400
+        },
+        {
+          "replacement": 0.0,
+          "old_retention": 1.0,
+          "invalid": 0.0,
+          "read_accuracy": 0.0,
+          "state_read_accuracy": 0.9254166666666667,
+          "pooled_accuracy": 0.0,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": null,
+          "workflow_success": 0.0,
+          "histories": 24,
+          "queries": 2400
+        }
+      ]
+    },
+    "gate_only": {
+      "replacement": 0.3333333333333333,
+      "old_retention": 0.3333333333333333,
+      "invalid": 0.0,
+      "read_accuracy": 0.2985416666666667,
+      "state_read_accuracy": 0.888125,
+      "pooled_accuracy": 0.33229166666666665,
+      "damage": 0.0,
+      "no_probe_damage": 0.0,
+      "conditional_damage": 0.0,
+      "workflow_success": 0.3333333333333333,
+      "histories": 24.0,
+      "queries": 2400.0,
+      "per_seed": [
+        {
+          "replacement": 0.3333333333333333,
+          "old_retention": 0.3333333333333333,
+          "invalid": 0.0,
+          "read_accuracy": 0.30125,
+          "state_read_accuracy": 0.8958333333333334,
+          "pooled_accuracy": 0.3333333333333333,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": 0.0,
+          "workflow_success": 0.3333333333333333,
+          "histories": 24,
+          "queries": 2400
+        },
+        {
+          "replacement": 0.3333333333333333,
+          "old_retention": 0.3333333333333333,
+          "invalid": 0.0,
+          "read_accuracy": 0.29583333333333334,
+          "state_read_accuracy": 0.8804166666666666,
+          "pooled_accuracy": 0.33125,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": 0.0,
+          "workflow_success": 0.3333333333333333,
+          "histories": 24,
+          "queries": 2400
+        }
+      ]
+    },
+    "idle": {
+      "replacement": 0.0,
+      "old_retention": 1.0,
+      "invalid": 0.0,
+      "read_accuracy": 0.0,
+      "state_read_accuracy": 0.9291666666666667,
+      "pooled_accuracy": 0.0,
+      "damage": 0.0,
+      "no_probe_damage": 0.0,
+      "conditional_damage": null,
+      "workflow_success": 0.0,
+      "histories": 24.0,
+      "queries": 2400.0,
+      "per_seed": [
+        {
+          "replacement": 0.0,
+          "old_retention": 1.0,
+          "invalid": 0.0,
+          "read_accuracy": 0.0,
+          "state_read_accuracy": 0.9325,
+          "pooled_accuracy": 0.0,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": null,
+          "workflow_success": 0.0,
+          "histories": 24,
+          "queries": 2400
+        },
+        {
+          "replacement": 0.0,
+          "old_retention": 1.0,
+          "invalid": 0.0,
+          "read_accuracy": 0.0,
+          "state_read_accuracy": 0.9258333333333333,
+          "pooled_accuracy": 0.0,
+          "damage": 0.0,
+          "no_probe_damage": 0.0,
+          "conditional_damage": null,
+          "workflow_success": 0.0,
+          "histories": 24,
+          "queries": 2400
+        }
+      ]
+    }
+  },
+  "ordinary": {
+    "gated": {
+      "replacement": 1.0,
+      "damage": 0.0,
+      "read_accuracy": 1.0
+    },
+    "closed": {
+      "replacement": 0.0,
+      "damage": 0.0,
+      "read_accuracy": 0.0
+    },
+    "gate_only": {
+      "replacement": 0.0,
+      "damage": 0.0,
+      "read_accuracy": 0.0
+    },
+    "idle": {
+      "replacement": 0.0,
+      "damage": 0.0,
+      "read_accuracy": 0.0
+    }
+  },
+  "refinement": {
+    "max_field_error": 0.0012798252212220548,
+    "max_current_error": 0.002932529341280264,
+    "logical_equal": true,
+    "pass": true
+  },
+  "independent_units": 2,
+  "histories": 48,
+  "queries": 4800
+}

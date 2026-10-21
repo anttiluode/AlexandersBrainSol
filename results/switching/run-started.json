@@ -1,0 +1,58 @@
+{
+  "mode": "full",
+  "source_commit": "a67f14722f68c3fd91115232970c9a4051ee7825",
+  "hashes": {
+    "ring.py": "ea37dc6effd806f707a37ba8e56d67336640f31ff1072a2900fb5e409379e9cf",
+    "experiment.py": "5cbcb79b5836a40da92ffbfe6d0c9ef8aede9694b65f5fa7988a41598275dabe",
+    "protocols/switching.json": "63436da5bdb5dba7c85355ce8ff24efab0cb38127bed5dcb911314b45f921752",
+    "protocols/calibration.json": "c33d8fc756a5b840eba61f3b2c0b3713d3c3f134b307f824b023a229064b7b76",
+    "audit.py": "86d5bfc2b6ec007a0a2cabdd3650c90fec98819c6ea92ac500c4a95e25eb3cd2"
+  },
+  "protocol": {
+    "version": 1,
+    "sites": 64,
+    "dx": 0.5,
+    "dt": 0.0025,
+    "temperature": 0.005,
+    "gate_sites": 6,
+    "gate_mu": -4,
+    "write_time": 200,
+    "close_time": 40,
+    "release_time": 40,
+    "wait_time": 80,
+    "sensor_bond": 32,
+    "read_phase": 0.005,
+    "read_time": 2,
+    "samples_per_read": 5,
+    "read_count": 100,
+    "sensor_noise": 0.01,
+    "replicas": 4,
+    "calibration_seed": 91,
+    "calibration_replicas": 32,
+    "refinement_seed": 83,
+    "refinement_field_tolerance": 0.02,
+    "refinement_current_tolerance": 0.005,
+    "development_seeds": [
+      101,
+      103
+    ],
+    "full_seeds": [
+      901,
+      907,
+      911,
+      919,
+      929,
+      937,
+      941,
+      947,
+      953,
+      967
+    ],
+    "rotor_barrier": 1.0,
+    "rotor_open_barrier": 0.02,
+    "rotor_force": 1.0,
+    "audit_rtol": 1e-08,
+    "audit_atol": 1e-10,
+    "workers": 8
+  }
+}

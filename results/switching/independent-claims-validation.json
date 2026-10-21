@@ -1,0 +1,28 @@
+{
+  "pass_claims_validation": true,
+  "receipt_gzip_sha256": "6deec9a94138c7f4dc7affe4e412566d62c09086a363177bfa2a033316795872",
+  "independent_audit_sha256": "024b9d8802b74b0a033576a9b259ffc189a4a1f920479c57c18b974e8bea4908",
+  "report_json_sha256": "f8cfef178f26f58137e478fb09935f58f43dd3ba795ba7d44240e38c709671c7",
+  "secondary_declaration_commit": "5c54b75301931636ca4c1f7713c983ba204f966e",
+  "counts": {
+    "histories": 240,
+    "queries": 24000,
+    "five_query_groups": 4800,
+    "writes_correct": 240,
+    "primary_correct": 22252,
+    "analog_correct": 4774,
+    "vote_correct": 4735,
+    "vote_abstentions": 9,
+    "probe_damage": 0,
+    "no_probe_damage": 0
+  },
+  "accuracy": {
+    "primary": 0.9271666666666667,
+    "analog_five": 0.9945833333333334,
+    "symbol_vote_five": 0.9864583333333333,
+    "vote_coverage": 0.998125
+  },
+  "primary_gate": "FAIL",
+  "interpretation": "Single-query primary gate fails. Repeated finite-alphabet symbols exceed 95% on the separately declared five-query diagnostic at fivefold duration. This does not eliminate continuous ring dynamics or establish topology or efficiency advantage. Zero monitored damage is finite-time evidence. Queries/groups share histories; they are not independent trials.",
+  "substantive_interpretation_defects_found": []
+}

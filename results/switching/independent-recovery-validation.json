@@ -1,0 +1,27 @@
+{
+  "pass_recovery_validation": true,
+  "producer_recorded_sha256": "af5d3e10a454f2ce86f0a81b20e86833599477cdd0114120c346af1279a76dfe",
+  "decompressed_receipt_sha256": "af5d3e10a454f2ce86f0a81b20e86833599477cdd0114120c346af1279a76dfe",
+  "gzip_sha256": "6deec9a94138c7f4dc7affe4e412566d62c09086a363177bfa2a033316795872",
+  "receipt_bytes": 20032737,
+  "preserved_prefix_bytes": 17226894,
+  "preserved_prefix_sha256": "8d09650581c531c330144ffa2a24b46d6f19f67eb71c1b1a3a46ddde2a944426",
+  "original_prefix_preserved_exactly": true,
+  "recovered_receipt_starts_with_original_prefix": true,
+  "duplicate_truncated_full_json_path_removed": true,
+  "source_commit": "a67f14722f68c3fd91115232970c9a4051ee7825",
+  "locked_source_verified": true,
+  "seeds": [
+    901,
+    907,
+    911,
+    919,
+    929,
+    937,
+    941,
+    947,
+    953,
+    967
+  ],
+  "explanation": "Independent byte-level verification: recovered complete bytes match the original producer digest, and the damaged original prefix survives exactly in both preserved forms. The root cause of truncation is not established. No simulations rerun for recovery."
+}

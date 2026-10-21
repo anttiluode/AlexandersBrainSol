@@ -1,0 +1,18 @@
+{
+  "seed": 967,
+  "checkpoint_sha256": "fccf92714110c4f6d106c0682db702cce38553878b0ed84af255555019cfd279",
+  "numerics": {
+    "floats": 46675,
+    "max_absolute_difference": 0.0
+  },
+  "summary": {
+    "write_accuracy": 1.0,
+    "closed_replacement": 0.0,
+    "closed_retention": 1.0,
+    "idle_retention": 1.0,
+    "read_accuracy": 0.9216666666666666,
+    "probe_damage": 0.0,
+    "idle_damage": 0.0
+  },
+  "complete_row_match": true
+}

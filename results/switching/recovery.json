@@ -1,0 +1,24 @@
+{
+  "label": "Packaging correction only; no model outcomes changed",
+  "source_commit": "a67f14722f68c3fd91115232970c9a4051ee7825",
+  "observed_truncated_bytes": 17226894,
+  "observed_truncated_sha256": "8d09650581c531c330144ffa2a24b46d6f19f67eb71c1b1a3a46ddde2a944426",
+  "recovered_bytes": 20032737,
+  "producer_recorded_sha256": "af5d3e10a454f2ce86f0a81b20e86833599477cdd0114120c346af1279a76dfe",
+  "recovered_sha256": "af5d3e10a454f2ce86f0a81b20e86833599477cdd0114120c346af1279a76dfe",
+  "recovered_gzip_sha256": "6deec9a94138c7f4dc7affe4e412566d62c09086a363177bfa2a033316795872",
+  "exact_producer_match": true,
+  "explanation": "Aggregate was observed truncated after the producer recorded its complete-file digest. Root cause not established. Reassembled all ten original checkpoints; serialized bytes exactly match producer digest. Original prefix retained.",
+  "checkpoint_seeds": [
+    901,
+    907,
+    911,
+    919,
+    929,
+    937,
+    941,
+    947,
+    953,
+    967
+  ]
+}
