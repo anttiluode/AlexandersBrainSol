@@ -98,7 +98,9 @@ or threshold-curve advantage is established by this test.
 
 The original NumPy-only runtime calibration is retained under development-v1
 with its exact uncommitted source snapshot. It is not a source-locked full run
-and no independent audit is claimed for that incomplete attempt. The new array
+and no independently locked audit is claimed for that attempt. Its seed finished,
+but the end-of-run source guard correctly rejected the changed checkout. The raw
+receipt and explicit abort record are preserved, without a completion manifest. The new array
 backend implements the same Euler equations and NumPy random increment order
 using Numba (pinned separately). It does not modify ring.py or the first gate.
 Seeded tests compare fields, monitor flags/minimum amplitudes, physical current
@@ -116,3 +118,28 @@ backend source hashes; pre-read writer scoring; read-survival protection in the
 analog-benefit gate; physical bond phase in numerical sensor comparisons; and
 wrong-reference detection in the compiled monitor. Current-source calibration
 remains unchanged and bound to its original first-gate implementation.
+
+## Locked outcome
+
+The exact source/protocol commit is 23b43c4383e1630e75f21b3218dc8679c6cc4a0e.
+Development-v2 and the five fresh batches use it without retuning. Trace, snap and
+oracle each pass: 120/120 writes, 240/240 protected bystander exposures, 120/120
+correct whole-array endpoints and 357/360 correct five-query votes. All 360
+cell-event probe episodes preserve their post-write state. The analog-benefit
+gate fails (zero gain, zero positive batches). Ordinary three-well counterparts
+are perfect on these operations. Every negative access control has zero correct
+whole-array endpoints. These are correlated repeated histories in five independent
+noise batches, not 120 independent devices.
+
+All 117,540 floating values in the archived original NumPy development receipt
+and compiled development-v2 agree at rtol=1e-10, atol=1e-11; maximum absolute
+difference is 3.72e-15. Discrete labels and monitor flags match exactly. This
+checks the faster backend without promoting the source-guard-aborted development
+attempt to confirmation. See backend-reference-validation.json and the independent
+full replay for distinct numerical-equivalence and reproducibility evidence.
+
+The snapped decision depends only on its retained integer address. Shared
+instrumentation still computes and records cue/trace arrays outside its gate
+choice; this establishes address-symbol sufficiency, not a physical two-bit
+implementation or measured memory/energy savings. A stronger corruption or
+capacity regime was not explored after the fresh result.

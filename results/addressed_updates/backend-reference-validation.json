@@ -1,0 +1,22 @@
+{
+  "development_only": true,
+  "seed": 1201,
+  "original_numpy_source_snapshot": "development-source-v1",
+  "numpy_run_status": {
+    "error": "ValueError",
+    "message": "source changed",
+    "completed_files": [
+      "seed-1201.json.gz"
+    ]
+  },
+  "compiled_source_commit": "23b43c4383e1630e75f21b3218dc8679c6cc4a0e",
+  "numpy_receipt_sha256": "aba9c7151050eeac9130673ba88c10f233d0ae44fb645929e38722a765f75d2b",
+  "compiled_receipt_sha256": "243dadd5414f97c88e6416c33251374553a017f4c36827ef1026aad0edfba86b",
+  "rtol": 1e-10,
+  "atol": 1e-11,
+  "numerics": {
+    "floats": 117540,
+    "max_absolute_difference": 3.7192471324942744e-15
+  },
+  "all_labels_flags_and_discrete_outputs_exact": true
+}
