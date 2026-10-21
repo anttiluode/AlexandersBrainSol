@@ -10,7 +10,41 @@ The motivation is [BrainBoxSol's local-slowness result](https://github.com/antti
 slowing improved retention but resisted updating. Here the proposed solution is
 an explicit write gate, not more permanent stability.
 
-## Fresh result — 21 October 2026
+## Addressed-array result — 21 October 2026
+
+[Report](results/addressed_updates/report/report.md) · [Protocol](protocols/addressed_updates.json) · [Complete per-seed receipts](results/addressed_updates/full/manifest.json) · [Design and limits](docs/addressed_updates.md)
+
+A three-cell array now performs four successive updates, including returning to
+the first cell. A noisy spatial cue chooses which local gate opens; a value bias
+is broadcast to all three cells. The source and protocol were published at
+[`23b43c4`](https://github.com/anttiluode/AlexandersBrainSol/commit/23b43c4383e1630e75f21b3218dc8679c6cc4a0e)
+before five fresh noise-seed batches (30 three-cell histories).
+
+| Fresh result, per controller | Analog trace | Discrete address latch | Oracle address |
+| --- | ---: | ---: | ---: |
+| Correct requested writes before reading | 120/120 | 120/120 | 120/120 |
+| Neighbor-cell exposures without monitored damage | 240/240 | 240/240 | 240/240 |
+| Correct whole-array update endpoints | 120/120 | 120/120 | 120/120 |
+| Five-query voted reads of intended contents | 357/360 | 357/360 | 357/360 |
+| Cell-event read episodes without damage | 360/360 | 360/360 | 360/360 |
+
+All three pass the new operational gate. **The analog-benefit gate fails:**
+the continuous trace adds zero percentage points over an address symbol.
+This is a sufficiency result for the engineered cue/delay schedule; diagnostic
+analog arrays remain archived, and no packed two-bit hardware is implemented.
+The ordinary three-well array reaches 100% on the same operations, including
+reading. Wrong-address, all-open and closed controls each get zero correct
+whole-array endpoints. Access matters; no topology advantage is demonstrated.
+
+The controller is engineered, the spatial ports define addresses, and requested
+values are externally supplied. This establishes selective access and reuse of
+a small memory bank. It does not learn where or what to store. Five-query reading
+costs five times the query duration and does not repair the first experiment's
+failed single-query gate. Numerical refinement passes; see the
+[review and reproduction record](docs/addressed_review.md) for independent audit
+and test evidence. All original code and receipts remain preserved.
+
+## First single-cell result — 21 October 2026
 
 [Report](results/switching/report.md) · [Full receipt](results/switching/full-recovered.json.gz) · [Recovery correction](results/switching/recovery.json)
 
@@ -34,7 +68,7 @@ five-query controls cost five times the query duration. The conventional
 three-well control also performs gated replacement and reaches 100% read accuracy;
 there is no demonstrated topology or efficiency advantage.
 
-All **20 tests pass**. An [independent full replay](results/switching/independent-audit.json) compared **468,527 floats with zero difference**, plus exact discrete outputs, under the original source lock.
+The original **20 tests passed**. An [independent full replay](results/switching/independent-audit.json) compared **468,527 floats with zero difference**, plus exact discrete outputs, under the original source lock.
 
 A truncated aggregate copy was recovered from the original completed seed
 checkpoints. The recovered bytes exactly match the complete-file SHA256 recorded
@@ -76,10 +110,11 @@ codes; this implementation stores integer/JSON values); neither continuous field
 
 ## Reproduce
 
-Python 3.12 and NumPy 2.x are sufficient.
+Python 3.12, NumPy 2.3.5 and Numba 0.68.0 reproduce the complete suite.
+The original single-cell experiment itself requires only NumPy.
 
 ```sh
-pip install -r requirements.txt
+pip install -r requirements-addressed.txt
 python -m unittest discover -s tests -v
 # Development uses only seeds 101 and 103 and refuses existing output paths:
 python experiment.py development --output /tmp/development.json
@@ -87,6 +122,10 @@ python experiment.py development --output /tmp/development.json
 python experiment.py full --lock SOURCE_COMMIT --output /tmp/full.json
 # Replay writes a different audit and preserves every original receipt:
 python audit.py results/switching/full-recovered.json.gz --output /tmp/full-audit.json
+# Three-cell follow-up: use the exact published source checkout for full runs:
+python addressed_updates.py development --output-dir /tmp/array-development
+python addressed_updates.py full --lock 23b43c4383e1630e75f21b3218dc8679c6cc4a0e --output-dir /tmp/array-full
+python addressed_audit.py results/addressed_updates/full --output /tmp/array-audit.json
 ```
 
 Each worker checkpoints its completed seed outcome before returning it to the coordinator. Full runs

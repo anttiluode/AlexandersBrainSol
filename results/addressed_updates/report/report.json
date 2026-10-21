@@ -1,0 +1,196 @@
+{
+  "source_commit": "23b43c4383e1630e75f21b3218dc8679c6cc4a0e",
+  "mode": "full",
+  "seeds": [
+    1301,
+    1303,
+    1307,
+    1319,
+    1321
+  ],
+  "histories": 30,
+  "updates": 120,
+  "bystander_exposures": 240,
+  "queries": 1800,
+  "ring": {
+    "summaries": {
+      "trace": {
+        "routing": 1.0,
+        "writes": 1.0,
+        "bystander_survival": 1.0,
+        "whole_array": 1.0,
+        "voted_read": 0.9916666666666666,
+        "read_survival": 1.0
+      },
+      "snap": {
+        "routing": 1.0,
+        "writes": 1.0,
+        "bystander_survival": 1.0,
+        "whole_array": 1.0,
+        "voted_read": 0.9916666666666666,
+        "read_survival": 1.0
+      },
+      "oracle": {
+        "routing": 1.0,
+        "writes": 1.0,
+        "bystander_survival": 1.0,
+        "whole_array": 1.0,
+        "voted_read": 0.9916666666666666,
+        "read_survival": 1.0
+      },
+      "shuffled": {
+        "routing": 0.0,
+        "writes": 0.125,
+        "bystander_survival": 0.5,
+        "whole_array": 0.0,
+        "voted_read": 0.25277777777777777,
+        "read_survival": 1.0
+      },
+      "all_open": {
+        "routing": 0.0,
+        "writes": 1.0,
+        "bystander_survival": 0.0,
+        "whole_array": 0.0,
+        "voted_read": 0.5444444444444445,
+        "read_survival": 1.0
+      },
+      "closed": {
+        "routing": 0.0,
+        "writes": 0.0,
+        "bystander_survival": 1.0,
+        "whole_array": 0.0,
+        "voted_read": 0.25277777777777777,
+        "read_survival": 1.0
+      }
+    },
+    "operational": {
+      "trace": {
+        "checks": {
+          "routing": true,
+          "writes": true,
+          "bystander_survival": true,
+          "whole_array": true,
+          "voted_read": true,
+          "read_survival": true,
+          "numerical": true
+        },
+        "pass": true
+      },
+      "snap": {
+        "checks": {
+          "routing": true,
+          "writes": true,
+          "bystander_survival": true,
+          "whole_array": true,
+          "voted_read": true,
+          "read_survival": true,
+          "numerical": true
+        },
+        "pass": true
+      },
+      "oracle": {
+        "checks": {
+          "routing": true,
+          "writes": true,
+          "bystander_survival": true,
+          "whole_array": true,
+          "voted_read": true,
+          "read_survival": true,
+          "numerical": true
+        },
+        "pass": true
+      },
+      "shuffled": {
+        "checks": {
+          "routing": false,
+          "writes": false,
+          "bystander_survival": false,
+          "whole_array": false,
+          "voted_read": false,
+          "read_survival": true,
+          "numerical": true
+        },
+        "pass": false
+      },
+      "all_open": {
+        "checks": {
+          "routing": false,
+          "writes": true,
+          "bystander_survival": false,
+          "whole_array": false,
+          "voted_read": false,
+          "read_survival": true,
+          "numerical": true
+        },
+        "pass": false
+      },
+      "closed": {
+        "checks": {
+          "routing": false,
+          "writes": false,
+          "bystander_survival": true,
+          "whole_array": false,
+          "voted_read": false,
+          "read_survival": true,
+          "numerical": true
+        },
+        "pass": false
+      }
+    },
+    "analog_benefit": {
+      "whole_array_gain": 0.0,
+      "positive_seed_fraction": 0.0,
+      "pass": false
+    }
+  },
+  "ordinary": {
+    "trace": {
+      "writes": 1.0,
+      "whole_array": 1.0,
+      "voted_read": 1.0,
+      "bystander_survival": 1.0,
+      "read_survival": 1.0
+    },
+    "snap": {
+      "writes": 1.0,
+      "whole_array": 1.0,
+      "voted_read": 1.0,
+      "bystander_survival": 1.0,
+      "read_survival": 1.0
+    },
+    "oracle": {
+      "writes": 1.0,
+      "whole_array": 1.0,
+      "voted_read": 1.0,
+      "bystander_survival": 1.0,
+      "read_survival": 1.0
+    },
+    "shuffled": {
+      "writes": 0.125,
+      "whole_array": 0.0,
+      "voted_read": 0.25,
+      "bystander_survival": 0.6875,
+      "read_survival": 1.0
+    },
+    "all_open": {
+      "writes": 1.0,
+      "whole_array": 0.0,
+      "voted_read": 0.5416666666666666,
+      "bystander_survival": 0.25,
+      "read_survival": 1.0
+    },
+    "closed": {
+      "writes": 0.0,
+      "whole_array": 0.0,
+      "voted_read": 0.25,
+      "bystander_survival": 1.0,
+      "read_survival": 1.0
+    }
+  },
+  "refinement": {
+    "max_field_error": 0.0010580938771797132,
+    "max_current_error": 0.002267216086866919,
+    "logical_equal": true,
+    "pass": true
+  }
+}

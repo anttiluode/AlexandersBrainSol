@@ -1,0 +1,9 @@
+independent exact source verified; replaying original NumPy calibration
+calibration verified; replaying full-sequence sampled refinement
+refinement verified True launching five full seeded histories
+independent complete 1303
+independent complete 1319
+independent complete 1301
+independent complete 1321
+independent complete 1307
+INDEPENDENT AUDIT PASS {'floats': 588917, 'max_absolute_difference': 0.0} {'floating_leaves': 587700, 'exact_nonfloating_leaves': 58535}
